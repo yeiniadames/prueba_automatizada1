@@ -1,0 +1,40 @@
+
+  <!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="estilos.css" />
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Registro de Estudiantes</title>
+  
+
+</head>
+<body>
+  <h1>Registro de Estudiantes</h1>
+
+  <form id="estudianteForm">
+    <input type="text" id="nombre" placeholder="Nombre" required />
+    <input type="text" id="apellido" placeholder="Apellido" required />
+    <input type="text" id="matricula" placeholder="Matrícula" required />
+    <input type="text" id="carrera" placeholder="Carrera" required />
+    <br>
+    <button type="submit" id="btnAgregar">Guardar</button>
+  </form>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Matrícula</th>
+        <th>Carrera</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody id="tablaEstudiantes"></tbody>
+  </table>
+
+</body>
+<script src="est.js"></script>
+</html>
